@@ -135,6 +135,10 @@ android {
         exclude "/META-INF/INDEX.LIST"
         exclude "DebugProbesKt.bin"
         exclude "/kotlin/**"
+
+        jniLibs {
+            useLegacyPackaging true
+        }
     }
 
     kotlinOptions {
